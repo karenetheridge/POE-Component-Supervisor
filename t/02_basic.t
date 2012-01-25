@@ -9,8 +9,10 @@ use Log::Dispatch::Config::TestLog;
 
 use Test::More 'no_plan';
 
-use ok 'POE::Component::Supervisor';
-use ok 'POE::Component::Supervisor::Supervised::Proc';
+BEGIN {
+use_ok 'POE::Component::Supervisor';
+use_ok 'POE::Component::Supervisor::Supervised::Proc';
+}
 
 use POE;
 
