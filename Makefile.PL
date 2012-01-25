@@ -1,7 +1,5 @@
 #!/usr/bin/perl -w
-
 use strict;
-
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
@@ -11,15 +9,22 @@ WriteMakefile(
 	SIGN         => 1,
 	PL_FILES     => { },
 	PREREQ_PM    => {
-        'Test::use::ok' => 0,
-        'POE' => "1.0002", # DIE in parents
-        'POE::API::Peek' => '2.13',
-        'MooseX::POE' => "0.210",
-        'MooseX::LogDispatch' => 0,
-        'Log::Dispatch::Config::TestLog' => 0,
-        'Set::Object' => 0,
-        'Hash::Util::FieldHash::Compat' => 0,
-        'namespace::clean' => 0,
+          'POE' => '1.0002', # DIE in parents
+          'POE::API::Peek' => '2.13',
+          'MooseX::POE' => '0.210',
+          'MooseX::LogDispatch' => 0,
+          'Set::Object' => 0,
+          'Hash::Util::FieldHash::Compat' => 0,
+          'namespace::clean' => 0,
 	},
+        BUILD_REQUIRES => {
+          'Test::More' => 0,
+          'Log::Dispatch::Config::TestLog' => 0,
+        },
+        META_MERGE => {
+          resources => {
+            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-Supervisor',
+            repository => 'https://github.com/nothingmuch/poe-component-supervisor',
+          },
+        },
 );
-
