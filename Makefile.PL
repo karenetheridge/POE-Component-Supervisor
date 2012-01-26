@@ -6,7 +6,6 @@ WriteMakefile(
 	NAME         => 'POE::Component::Supervisor',
 	VERSION_FROM => 'lib/POE/Component/Supervisor.pm',
 	INSTALLDIRS  => 'site',
-	SIGN         => 1,
 	PL_FILES     => { },
 	PREREQ_PM    => {
           'POE' => '1.0002', # DIE in parents
