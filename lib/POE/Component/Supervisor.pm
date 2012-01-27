@@ -14,7 +14,7 @@ use Hash::Util::FieldHash::Compat qw(idhash);
 
 use namespace::clean -except => 'meta';
 
-our $VERSION = "0.07";
+our $VERSION = "0.08";
 
 with qw(
     POE::Component::Supervisor::Interface
