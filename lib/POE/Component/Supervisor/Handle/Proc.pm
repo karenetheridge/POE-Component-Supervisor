@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package POE::Component::Supervisor::Handle::Proc;
 use MooseX::POE;
 
