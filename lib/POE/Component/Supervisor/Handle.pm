@@ -80,7 +80,7 @@ __END__
 POE::Component::Supervisor::Handle - Base role for supervision handles
 
 =head1 SYNOPSIS
-    
+
     # see Handle::Proc and Handle::Session
 
 =head1 DESCRIPTION

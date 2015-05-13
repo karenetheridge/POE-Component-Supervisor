@@ -102,7 +102,6 @@ foreach my $class ( @classes, undef, undef ) {
                 stop_children => sub {
                     $supervisor->stop;
                 },
-                
             },
         );
 

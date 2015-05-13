@@ -132,7 +132,7 @@ sub START {
         $self->wheel_parameters,
         Program => $program,
     );
-    
+
     my $pid = $wheel->PID;
 
     $self->_wheel($wheel);
@@ -205,7 +205,7 @@ event _cleanup => sub {
        $wheel->shutdown_stdin;
        $self->_clear_wheel;
     }
-    
+
     $kernel->alarm_remove_all();
 
     $kernel->refcount_decrement( $self->get_session_id, __PACKAGE__ );

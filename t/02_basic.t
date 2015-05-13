@@ -176,7 +176,7 @@ use POE;
     $poe_kernel->run;
 
     is( scalar(@pids), 5, "5 children" );
-    
+
     foreach my $pid ( @pids ) {
         isnt( $pid, $$, "pid was diff" );
     }

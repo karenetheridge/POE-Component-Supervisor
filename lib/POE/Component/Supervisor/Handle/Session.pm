@@ -141,7 +141,7 @@ sub CHILD {
 
     if ( my $coderef = $self->can($method) ) {
         goto &$coderef; # maybe OBJECT != 0, so shift->$method(@_) could break
-    } else { 
+    } else {
         return;
     }
 }
@@ -226,7 +226,7 @@ L<POE::Component::Supervisor> babysit POE sessions.
 
 =head1 DESCRIPTION
 
-This supervision handle will watch L<POE::Session>s 
+This supervision handle will watch L<POE::Session>s
 
 =head1 ATTRIBUTES
 
@@ -253,7 +253,7 @@ Otherwise the sessions to be tracked must be returned from the C<start_callback>
 
 Defaults to false.
 
-=item 
+=item
 
 =back
 
