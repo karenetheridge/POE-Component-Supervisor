@@ -3,10 +3,8 @@ package POE::Component::Supervisor::Supervised::Session;
 our $VERSION = '0.09';
 
 use Moose;
-
 use POE::Component::Supervisor::Handle::Session;
-
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw(POE::Component::Supervisor::Supervised);
 

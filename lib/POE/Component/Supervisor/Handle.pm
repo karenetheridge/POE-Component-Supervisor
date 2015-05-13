@@ -3,11 +3,9 @@ package POE::Component::Supervisor::Handle;
 our $VERSION = '0.09';
 
 use Moose::Role;
-
 use POE::Component::Supervisor::Interface ();
 use POE::Component::Supervisor::Supervised ();
-
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw(POE::Component::Supervisor::Handle::Interface);
 

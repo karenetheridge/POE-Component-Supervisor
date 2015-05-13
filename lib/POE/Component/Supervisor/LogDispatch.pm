@@ -3,8 +3,7 @@ package POE::Component::Supervisor::LogDispatch;
 our $VERSION = '0.09';
 
 use Moose::Role;
-
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw(MooseX::LogDispatch);
 

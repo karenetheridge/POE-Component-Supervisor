@@ -5,21 +5,16 @@ package POE::Component::Supervisor::Handle::Proc;
 our $VERSION = '0.09';
 
 use MooseX::POE 0.210;
-
 use POSIX qw(WIFSIGNALED WIFEXITED WEXITSTATUS WTERMSIG);
-
 use POE::Wheel::Run;
-
-use namespace::clean -except => 'meta';
+use Time::HiRes qw(time);
+use Scalar::Util ();
+use namespace::autoclean;
 
 with qw(
     POE::Component::Supervisor::Handle
     POE::Component::Supervisor::LogDispatch
 );
-
-use Time::HiRes qw(time);
-
-use Scalar::Util ();
 
 has wheel_parameters => (
     isa => "HashRef",

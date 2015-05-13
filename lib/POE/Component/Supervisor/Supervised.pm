@@ -3,10 +3,8 @@ package POE::Component::Supervisor::Supervised;
 our $VERSION = '0.09';
 
 use Moose::Role;
-
 use Moose::Util::TypeConstraints;
-
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw(POE::Component::Supervisor::Supervised::Interface);
 

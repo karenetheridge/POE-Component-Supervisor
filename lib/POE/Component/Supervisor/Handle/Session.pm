@@ -12,11 +12,9 @@ with qw(
 );
 
 use POE::API::Peek 2.13;
-
 #use MooseX::Types::Set::Object;
 use Set::Object ();
-
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 has implicit_tracking => (
     isa => "Bool",

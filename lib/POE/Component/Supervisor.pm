@@ -5,17 +5,12 @@ package POE::Component::Supervisor;
 our $VERSION = '0.09';
 
 use MooseX::POE 0.210;
-
 use Moose::Util::TypeConstraints;
-
 use POE::Component::Supervisor::Supervised;
 use POE::Component::Supervisor::Handle;
-
 use Devel::PartialDump;
-
 use Hash::Util::FieldHash::Compat qw(idhash);
-
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw(
     POE::Component::Supervisor::Interface
