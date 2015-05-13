@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package POE::Component::Supervisor;
 
 our $VERSION = '0.09';
