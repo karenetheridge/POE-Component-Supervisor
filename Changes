@@ -1,3 +1,6 @@
+    - fixed deprecated / invalid form of foreach loop (Jan Bieron, part of the
+      GitHub Pull Request Challenge)
+
 0.08
     - remove Test::use::ok
     - silence qw() warning
