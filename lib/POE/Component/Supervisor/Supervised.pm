@@ -1,4 +1,7 @@
 package POE::Component::Supervisor::Supervised;
+
+our $VERSION = '0.09';
+
 use Moose::Role;
 
 use Moose::Util::TypeConstraints;

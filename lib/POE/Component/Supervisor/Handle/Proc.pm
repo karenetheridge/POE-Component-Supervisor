@@ -1,4 +1,7 @@
 package POE::Component::Supervisor::Handle::Proc;
+
+our $VERSION = '0.09';
+
 use MooseX::POE;
 
 use POSIX qw(WIFSIGNALED WIFEXITED WEXITSTATUS WTERMSIG);

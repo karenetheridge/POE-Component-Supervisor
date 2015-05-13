@@ -1,4 +1,7 @@
 package POE::Component::Supervisor::Interface;
+
+our $VERSION = '0.09';
+
 use Moose::Role;
 
 use namespace::clean -except => 'meta';

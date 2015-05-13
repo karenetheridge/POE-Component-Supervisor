@@ -1,4 +1,7 @@
 package POE::Component::Supervisor;
+
+our $VERSION = '0.09';
+
 use MooseX::POE;
 
 use Moose::Util::TypeConstraints;
@@ -11,8 +14,6 @@ use Devel::PartialDump;
 use Hash::Util::FieldHash::Compat qw(idhash);
 
 use namespace::clean -except => 'meta';
-
-our $VERSION = "0.08";
 
 with qw(
     POE::Component::Supervisor::Interface

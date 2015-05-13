@@ -1,4 +1,7 @@
 package POE::Component::Supervisor::Handle;
+
+our $VERSION = '0.09';
+
 use Moose::Role;
 
 use POE::Component::Supervisor::Interface ();

@@ -1,4 +1,7 @@
 package POE::Component::Supervisor::Handle::Session;
+
+our $VERSION = '0.09';
+
 use MooseX::POE;
 
 with qw(
