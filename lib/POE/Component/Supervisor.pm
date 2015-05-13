@@ -413,6 +413,8 @@ A handle will do the actual management of the child, sending events to the
 supervisor when the child is terminated, and also facilitate explicit
 termination of the child's instance.
 
+=for stopwords respawn
+
 Based on its C<restart_policy> the supervisor may order other handles to also
 stop, and ask various child descriptors to respawn certain children.
 
@@ -502,8 +504,8 @@ If C<true> is returned an error will be thrown by the supervisor.
 
 =head1 EVENTS
 
-The L<POE> event api is currently internal. All manipulation of the supervisor
-object should be done using the api described in L<METHODS>.
+The L<POE> event API is currently internal. All manipulation of the supervisor
+object should be done using the API described in L<METHODS>.
 
 =head1 SEE ALSO
 

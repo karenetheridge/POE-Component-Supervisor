@@ -72,7 +72,7 @@ L<POE::Component::Supervisor::Handle::Proc>. If your handle class requires
 additional attributes, you must subclass your own C<Supervised> variant.
 
 The C<_inherit_attributes_from_handle_class> method can then be invoked on your
-subclass to reinherit all the attributes. Read the source of
+subclass to re-inherit all the attributes. Read the source of
 L<POE::Component::Supervisor::Supervised> for more details.
 
 =back

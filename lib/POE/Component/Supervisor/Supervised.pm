@@ -203,6 +203,8 @@ Required.
 
 Creates a new L<POE::Component::Supervisor::Handle> object for the supervisor.
 
+=for stopwords respawn respawning
+
 =item respawn
 
 An alias for C<spawn> by default.
@@ -215,7 +217,7 @@ May be overridden if respawning requires cleanup first, or something like that.
 
 =item is_permanent
 
-Boolean query methods that operatoe on C<restart_policy>.
+Boolean query methods that operate on C<restart_policy>.
 
 =back
 

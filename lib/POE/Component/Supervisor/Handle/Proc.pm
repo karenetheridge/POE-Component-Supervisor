@@ -302,6 +302,8 @@ L<POE::Component::Supervisor>.
 
 =head1 SIGNALLING
 
+=for stopwords backoff durations
+
 In order to kill a child process first the child's standard input is closed,
 then the C<TERM> signal is sent, and after a wait period the C<KILL> signal is
 sent.
@@ -324,12 +326,12 @@ will be sent, also with an exponential backoff.
 From the time of the C<stop> method being called the handle will wait for a
 maximum of C<wait_for> seconds before giving up on the child process.
 
-ANy of these attributes may be set to C<undef> to disable their corresponding
+Any of these attributes may be set to C<undef> to disable their corresponding
 behaviors (suppress sending of a certain signal, or wait indefinitely).
 
 =head1 ATTRIBUTES
 
-B<NOTE>: All the attributes are generally passsed in by
+B<NOTE>: All the attributes are generally passed in by
 L<POE::Component::Supervisor::Supervised::Proc>, the factory for this class.
 
 They are documented here because that is where their behavior is defined.
@@ -401,7 +403,7 @@ Additional parameters to pass to L<POE::Wheel::Run/new>.
 Callbacks to be fired when the corresponding L<POE::Wheel::Run> events are
 handled.
 
-This only affects the default event handlers, if you ovverride those by passing
+This only affects the default event handlers, if you override those by passing
 your own C<wheel_parameters> these callbacks will never take effect.
 
 The arguments are passed through as is, see L<POE::Wheel::Run> for the details.

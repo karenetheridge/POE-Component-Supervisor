@@ -71,7 +71,7 @@ L<POE::Component::Supervisor::Handle::Session>. If your handle class requires
 additional attributes, you must subclass your own C<Supervised> variant.
 
 The C<_inherit_attributes_from_handle_class> method can then be invoked on your
-subclass to reinherit all the attributes. Read the source of
+subclass to re-inherit all the attributes. Read the source of
 L<POE::Component::Supervisor::Supervised> for more details.
 
 =back
@@ -93,7 +93,7 @@ Used by C<should_restart>. See L<POE::Component::Supervisor::Supervised> for
 details.
 
 Returns true if the C<error> argument is provided (it's added by the handle
-when a C<DIE> signal is cought from one of the tracked sessions).
+when a C<DIE> signal is caught from one of the tracked sessions).
 
 =back
 
