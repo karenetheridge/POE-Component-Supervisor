@@ -1,3 +1,6 @@
+Revision history for POE-Component-Supervisor
+
+{{$NEXT}}
     - fixed deprecated / invalid form of foreach loop (Jan Bieron, part of the
       GitHub Pull Request Challenge)
 

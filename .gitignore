@@ -1,0 +1,6 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/POE-Component-Supervisor-*/
+/POE-Component-Supervisor-*.tar.gz

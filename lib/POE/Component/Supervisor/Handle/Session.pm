@@ -2,14 +2,14 @@ package POE::Component::Supervisor::Handle::Session;
 
 our $VERSION = '0.09';
 
-use MooseX::POE;
+use MooseX::POE 0.210;
 
 with qw(
     POE::Component::Supervisor::Handle
     POE::Component::Supervisor::LogDispatch
 );
 
-use POE::API::Peek;
+use POE::API::Peek 2.13;
 
 #use MooseX::Types::Set::Object;
 use Set::Object ();
