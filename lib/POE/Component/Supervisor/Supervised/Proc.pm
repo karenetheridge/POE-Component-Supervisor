@@ -96,5 +96,3 @@ Returns true if the C<exit_code> argument is not equal to 0.
 =back
 
 =cut
-
-

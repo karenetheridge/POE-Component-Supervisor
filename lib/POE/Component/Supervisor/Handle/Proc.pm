@@ -301,7 +301,7 @@ L<POE::Component::Supervisor>.
 
 =for stopwords backoff durations
 
-In order to kill a child process first the child's standard input is closed,
+In order to kill a child process, first the child's standard input is closed,
 then the C<TERM> signal is sent, and after a wait period the C<KILL> signal is
 sent.
 

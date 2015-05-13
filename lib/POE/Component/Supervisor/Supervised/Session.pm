@@ -96,6 +96,3 @@ when a C<DIE> signal is caught from one of the tracked sessions).
 =back
 
 =cut
-
-
-

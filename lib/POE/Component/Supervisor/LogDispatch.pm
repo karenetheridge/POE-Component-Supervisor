@@ -36,5 +36,3 @@ This is a variation on L<MooseX::LogDispatch> that ensures that a global
 L<Log::Dispatch::Config> singleton will be respected.
 
 =cut
-
-

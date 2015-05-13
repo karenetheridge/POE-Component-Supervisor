@@ -373,7 +373,7 @@ __END__
 
 =head1 NAME
 
-POE::Component::Supervisor - Erlang inspired babysitting
+POE::Component::Supervisor - Erlang-inspired babysitting
 
 =head1 SYNOPSIS
 

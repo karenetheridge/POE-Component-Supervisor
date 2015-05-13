@@ -129,7 +129,7 @@ POE::Component::Supervisor::Supervised - A role for supervision descriptors.
 
 =head1 DESCRIPTION
 
-All children supervised by the L<POE::Component::Supervisor> must do this role.
+All children supervised by the L<POE::Component::Supervisor> must compose this role.
 
 This role provides an API for instantiating
 L<POE::Component::Supervisor::Handle> as required by the supervisor,
@@ -220,5 +220,3 @@ Boolean query methods that operate on C<restart_policy>.
 =back
 
 =cut
-
-

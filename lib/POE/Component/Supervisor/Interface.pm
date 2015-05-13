@@ -25,8 +25,6 @@ POE::Component::Supervisor::Interface - Minimal interface for supervisors
     package My::Supervisor;
     with qw(POE::Component::Supervisor::Interface);
 
-
-
 =head1 DESCRIPTION
 
 This role lets you implement your own supervisor, reusing
@@ -39,8 +37,8 @@ itself.
 
 =head1 REQUIRED METHODS
 
-
+=for :list
+* notify_spawned
+* notify_stopped
 
 =cut
-
-

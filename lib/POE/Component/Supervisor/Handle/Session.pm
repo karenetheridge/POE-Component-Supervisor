@@ -272,5 +272,3 @@ Stop the supervised sessions.
 =back
 
 =cut
-
-
