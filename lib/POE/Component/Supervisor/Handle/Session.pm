@@ -253,8 +253,6 @@ Otherwise the sessions to be tracked must be returned from the C<start_callback>
 
 Defaults to false.
 
-=item
-
 =back
 
 =head1 METHODS

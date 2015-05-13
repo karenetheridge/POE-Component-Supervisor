@@ -472,6 +472,8 @@ The order of the children matters, see C<restart_policy>.
 
 =head1 METHODS
 
+=over 4
+
 =item new %args
 
 =item start @children
@@ -495,6 +497,8 @@ Currently always returns false. In the future restart throttling will be
 implemented using this method.
 
 If C<true> is returned an error will be thrown by the supervisor.
+
+=back
 
 =head1 EVENTS
 
