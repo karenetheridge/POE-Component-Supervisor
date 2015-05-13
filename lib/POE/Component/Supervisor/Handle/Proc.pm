@@ -278,7 +278,7 @@ sub is_running {
     not $self->has_exited;
 }
 
-__PACKAGE__
+__PACKAGE__->meta->make_immutable;
 
 __END__
 

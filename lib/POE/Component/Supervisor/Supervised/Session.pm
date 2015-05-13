@@ -17,7 +17,7 @@ sub is_abnormal_exit {
     exists $args{error};
 }
 
-__PACKAGE__
+__PACKAGE__->meta->make_immutable;
 
 __END__
 

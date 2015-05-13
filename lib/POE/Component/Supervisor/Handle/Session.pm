@@ -209,7 +209,7 @@ sub is_running {
     #return 1;
 }
 
-__PACKAGE__
+__PACKAGE__->meta->make_immutable;
 
 __END__
 

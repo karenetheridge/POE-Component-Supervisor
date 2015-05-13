@@ -20,7 +20,7 @@ sub is_abnormal_exit {
     return ( defined($exit_code) and $exit_code != 0 );
 }
 
-__PACKAGE__
+__PACKAGE__->meta->make_immutable;
 
 __END__
 

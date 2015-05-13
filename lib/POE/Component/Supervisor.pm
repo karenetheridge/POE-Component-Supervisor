@@ -365,7 +365,7 @@ event _child => sub {
     $self->logger->debug("supervisor $self had child event for $child: $verb");
 };
 
-__PACKAGE__
+__PACKAGE__->meta->make_immutable;
 
 __END__
 
