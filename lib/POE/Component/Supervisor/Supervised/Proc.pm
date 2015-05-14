@@ -1,6 +1,6 @@
 package POE::Component::Supervisor::Supervised::Proc;
 
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 use Moose;
 use POE::Component::Supervisor::Handle::Proc;

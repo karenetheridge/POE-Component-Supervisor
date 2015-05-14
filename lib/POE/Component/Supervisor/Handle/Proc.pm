@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package POE::Component::Supervisor::Handle::Proc;
 
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 use MooseX::POE 0.210;
 use POSIX qw(WIFSIGNALED WIFEXITED WEXITSTATUS WTERMSIG);
